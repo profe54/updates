@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HybsChat - Mantenimiento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            min-height: 100vh;
+            width: 100vw;
+            height: 100vh;
+            background: url('background.jpg') center center/cover no-repeat fixed;
+            position: relative;
+        }
+        .maintenance-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(247,247,247,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            max-width: 420px;
+            width: 100%;
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+            z-index: 20;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+        .logo-img {
+            height: 48px;
+            margin-right: 12px;
+        }
+        .logo-text {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #222;
+        }
+        .primary {
+            color: #00C492;
+        }
+        .maintenance-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 0 auto 18px auto;
+            display: block;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .desc {
+            color: #555;
+            font-size: 1.08rem;
+            margin-bottom: 18px;
+        }
+        .contact {
+            font-size: 0.98rem;
+            color: #888;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 8px 18px 8px;
+            }
+            .logo-text {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-overlay">
+        <div class="container">
+            <div class="logo" style="justify-content: center;">
+                <img src="logo-hybschat.png" alt="HybsChat Logo" class="logo-img" style="height: 70px; margin: 0;">
+            </div>
+            <div class="title">Sitio en Mantenimiento</div>
+            <div class="desc">
+                Estamos realizando mejoras para brindarte una mejor experiencia.<br>
+                Vuelve a intentarlo más tarde.<br>
+                <b>app.hybschat.com</b>
+            </div>
+            <div class="contact">
+                Si tienes dudas, contáctanos a <a href="mailto:soporte@hybschat.com" style="color:#00C492;text-decoration:none;">soporte@hybschat.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
